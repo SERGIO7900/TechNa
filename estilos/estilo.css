@@ -1,0 +1,244 @@
+body{
+  font-family: helvetica;
+  margin: 0;
+}
+.header{
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+
+}
+.logo{
+  display: inline-block;
+  margin: 0;
+  transition: .5s;
+
+}
+.menu{
+  display: inline-block;
+  position: absolute;
+  right: 15%;
+  transition: .5s;
+
+}
+.menu ol{
+  padding: 0;
+}
+.menu li{
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px 20px;
+  margin: 0 10px;
+  transition: .3s;
+  border-radius: 15px;
+}
+.menu li:hover{
+
+  background: #051144;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+
+}
+.menu a:hover{
+  color: white;
+
+}
+.portada{
+  height: 400px;
+  background-image: url("../imagenes/videojuegos.jpg");
+  background-size: contain;
+}
+.contenedor1{
+  display: block;
+  padding: 80px 0;
+}
+.contenedor1 h1{
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  margin: 60px 0 0 0;
+}
+.contenedor1 h2{
+    display: block;
+    text-align: center;
+    font-size: 22px;
+}
+.secciones{
+  background: #0B2B38;
+  height: 800px;
+  margin-bottom: 50px;
+}
+.titulo{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+.temas{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+.C-N{
+  position: relative;
+  height: 300px;
+  width: 500px;
+  background-image: url("../imagenes/naturaleza.jpg");
+  background-size: cover;
+  cursor: pointer;
+}
+
+
+.na{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+  background: rgba(16, 19, 34, 0.7);
+  cursor: pointer;
+  transition: .3s;
+  transform:scale(0);
+}
+
+.C-N:hover .na{
+  transform:scale(1);
+  border: 4px solid white;
+}
+
+
+.C-T{
+  position: relative;
+  height: 300px;
+  width: 500px;
+  background-image: url("../imagenes/tecnologia.jpg");
+  background-size: cover;
+}
+
+.tech{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  color: white;
+  background: rgba(16, 19, 34, 0.7);
+  cursor: pointer;
+  transition: .3s;
+  transform:scale(0);
+}
+.C-T:hover .tech{
+  transform:scale(1);
+  border: 4px solid white;
+}
+.or{
+  display: flex;
+  align-items: center;
+}
+.or p{
+  font-size: 30px;
+  color: white;
+  font-weight: 700;
+
+}
+
+
+.proximos{
+  margin: 0 auto;
+  border: 3px solid white;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  align-items:center;
+  height: 100px;
+  width: 500px;
+  background: rgba(16, 19, 34, 0.8);
+  cursor: pointer;
+}
+.proximos:hover{
+  background: rgba(104, 116, 140, 0.8);
+}
+.proximos:hover .prox{
+    color: #2D384C;
+}
+.prox{
+  text-align: center;
+  padding-top: 45px;
+  color: white;
+  transition: .3s;
+}
+.fin{
+ padding: 40px;
+ background: #2D384C;
+ height: 150px;
+ border: 10px solid #051144;
+}
+.cf{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 25%;
+
+}
+.foto{
+  background-image: url("../imagenes/perfil.jpg");
+  background-size: cover;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  border-radius: 30%;
+  transition: .4s;
+}
+.foto:hover{
+  border: 3px solid #051144;
+}
+.info{
+
+}
+.info a{
+  padding-top: 5px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 15px;
+  font-size: 20px;
+  transition: .4s;
+}
+.info a:hover {
+  border-radius: 15px;
+  background: #051144;
+}
+.f-titulo{
+  text-align: center;
+}
+.f-titulo h1{
+  margin: 0;
+  color: white;
+  font-size: 28px;
+}
+
+
+
+
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1000px) {
+  .header{
+    display: block;
+    text-align: center;
+  }
+  .menu{
+    display: block;
+    position: static;
+  }
+  .temas .C-N,.C-T{
+    width: 400px;
+    background-size: cover;
+  }
+}
