@@ -2,6 +2,7 @@ body{
   font-family: helvetica;
   margin: 0;
 }
+
 .header{
   max-width: 1000px;
   display: flex;
@@ -47,11 +48,14 @@ body{
   color: white;
 
 }
-
+.contenedor-p{
+  background: #AAAAAA;
+  padding: 40px 0;
+}
 .portada-tech{
-  height: 450px;
+  height: 550px;
   background-image: url("../imagenes/portada-tech.jpg");
-  background-size: contain;
-  width: 1000px;
+  background-size: cover;
+  width: 1200px;
   margin: 0 auto;
 }
