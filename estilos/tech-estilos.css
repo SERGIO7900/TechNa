@@ -1,0 +1,57 @@
+body{
+  font-family: helvetica;
+  margin: 0;
+}
+.header{
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  margin: 20px auto;
+
+}
+.logo{
+  display: inline-block;
+  margin: 0;
+  transition: .5s;
+
+}
+.menu{
+  display: inline-block;
+  position: absolute;
+  right: 15%;
+  transition: .5s;
+
+}
+.menu ol{
+  padding: 0;
+}
+.menu li{
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px 20px;
+  margin: 0 10px;
+  transition: .3s;
+  border-radius: 15px;
+}
+.menu li:hover{
+
+  background: #051144;
+}
+.menu a{
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+
+}
+.menu a:hover{
+  color: white;
+
+}
+
+.portada-tech{
+  height: 450px;
+  background-image: url("../imagenes/tecnologia.jpg");
+  background-size: cover;
+  width: 1000px;
+  margin: 0 auto;
+}
