@@ -50,8 +50,8 @@ body{
 
 .portada-tech{
   height: 450px;
-  background-image: url("../imagenes/tecnologia.jpg");
-  background-size: cover;
+  background-image: url("../imagenes/portada-tech.jpg");
+  background-size: contain;
   width: 1000px;
   margin: 0 auto;
 }
