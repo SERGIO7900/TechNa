@@ -49,14 +49,24 @@ body{
 
 }
 .contenedor-p{
-  background: #0B2B38;
+  background: #e6ebec;
+  width: 100%;
+  margin: 0 auto;
   padding: 40px 0;
+}
+.fondo{
+  background: #032a45;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 0;
+  box-shadow: 10px -10px 20px 5px #01101b;
+  border-radius: 15px;
 }
 .portada-tech{
   height: 500px;
   background-image: url("../imagenes/portada-tech.jpg");
   background-size: cover;
-  width: 1200px;
+  width: 900px;
   margin: 0 auto;
 }
 
