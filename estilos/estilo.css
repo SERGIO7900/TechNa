@@ -49,12 +49,20 @@ body{
 }
 .portada{
   height: 400px;
-  background-image: url("../imagenes/videojuegos.jpg");
-  background-size: contain;
+  animation-name: swipe;
+  animation-duration: 2s;
+  animation-delay: .2s;
+  transition: 2s;
+
 }
+
+
 .contenedor1{
   display: block;
   padding: 80px 0;
+  background-image: url("../imagenes/videojuegos.jpg");
+  background-size: contain;
+
 }
 .contenedor1 h1{
   display: block;
@@ -83,17 +91,21 @@ body{
     justify-content: space-between;
     margin: 0 30px;
 }
-.C-N{
+.temas a{
+  text-decoration: none;
+    color: white;
+}
+.C-V{
   position: relative;
   height: 300px;
   width: 500px;
-  background-image: url("../imagenes/naturaleza.jpg");
+  background-image: url("../imagenes/videojuegos.jpg");
   background-size: cover;
   cursor: pointer;
 }
 
 
-.na{
+.V-J{
   height: 100%;
   margin: 0;
   display: flex;
@@ -107,7 +119,7 @@ body{
   transform:scale(0);
 }
 
-.C-N:hover .na{
+.C-V:hover .V-J{
   transform:scale(1);
   border: 4px solid white;
 }
@@ -119,7 +131,10 @@ body{
   width: 500px;
   background-image: url("../imagenes/tecnologia.jpg");
   background-size: cover;
+    box-shadow: inset 0 -.2em rgba(0, 0, 0, .2);
+    animation-name: click;
 }
+
 
 .tech{
   height: 100%;
@@ -132,11 +147,10 @@ body{
   cursor: pointer;
   transition: .3s;
   transform:scale(0);
+
+
 }
-.tech a{
-  text-decoration: none;
-    color: white;
-}
+
 
 .C-T:hover .tech{
   transform:scale(1);
@@ -181,7 +195,25 @@ body{
  padding: 40px;
  background: #2D384C;
  height: 150px;
- border: 10px solid #051144;
+ animation-name: borde;
+ animation-duration: 3s;
+ animation-iteration-count: infinite;
+ animation-timing-function: ease-in;
+ animation-direction: alternate;
+}
+@keyframes borde {
+  0%{
+    border: 10px solid #00F9F1;
+  }
+  30%{
+    border: 10px solid #00B9F7;
+  }
+  60%{
+    border: 10px solid #0042F2;
+  }
+  100%{
+    border: 10px solid #02EFA0;
+  }
 }
 .cf{
   height: 150px;
@@ -212,12 +244,26 @@ body{
   color: white;
   padding: 5px 15px;
   font-size: 20px;
-  transition: .4s;
+  animation-name: color;
+  animation-duration: 1s;
+  transition: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:ease-in-out;
 }
-.info a:hover {
+@keyframes color {
+  0%{
+    color: #f3f8f5;
+  }
+  100%{
+    color: #009688;
+  }
+}
+
+/* .info a:hover {
   border-radius: 15px;
   background: #051144;
-}
+} */
 .f-titulo{
   text-align: center;
 }
@@ -241,7 +287,7 @@ body{
     display: block;
     position: static;
   }
-  .temas .C-N,.C-T{
+  .temas .C-V,.C-T{
     width: 400px;
     background-size: cover;
   }
