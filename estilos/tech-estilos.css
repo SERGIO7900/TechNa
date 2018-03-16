@@ -70,6 +70,19 @@ body{
 .fondo{
   background: #032a45;
   max-width: 1100px;
+<<<<<<< HEAD
+=======
+  margin: 0 auto;
+  padding: 30px 0;
+  box-shadow: 10px -10px 20px 5px #01101b;
+  border-radius: 15px;
+}
+.portada-tech{
+  height: 500px;
+  background-image: url("../imagenes/portada-tech.jpg");
+  background-size: cover;
+  width: 900px;
+>>>>>>> e9ee172eb09e043206895864a0d512efefd98636
   margin: 0 auto;
   padding: 30px 0;
   box-shadow: 10px -10px 20px 5px #01101b;
@@ -85,4 +98,13 @@ body{
 .figure img{
   height: 400px;
   width: 900px;
+}
+
+a .titulo-principal{
+  font-size: 35px;
+  color: yellow;
+  text-align: center;
+  padding-top: 200px;
+  text-decoration: underline;
+
 }
